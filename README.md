@@ -1,17 +1,29 @@
-# estudo_biblico
+# Estudo Bíblico
 
-A new Flutter project.
+O **Estudo Bíblico** é um aplicativo desenvolvido em Flutter feito com base no estudo bíblico "A Verdade"
 
-## Getting Started
+## 🚀 Funcionalidades
 
-This project is a starting point for a Flutter application.
+*   **Leitura Fluida:** Interface limpa e focada no texto para uma leitura sem distrações.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 🛠️ Tecnologias Utilizadas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+*   **Framework:** [Flutter](https://flutter.dev/)
+*   **Linguagem:** [Dart](https://dart.dev/)
+
+
+## 📂 Estrutura do Projeto
+
+A organização do código segue um padrão modular para facilitar a manutenção:
+
+```text
+lib/
+├── screens/       # Telas principais da aplicação.
+├── widgets/       # Componentes de interface reutilizáveis entre várias telas.
+└── main.dart      # Ponto de entrada do aplicativo.
+```
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
