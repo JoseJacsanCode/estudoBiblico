@@ -1,4 +1,6 @@
 import 'package:estudo_biblico/pages/home_page.dart';
+import 'package:estudo_biblico/pages/study1.dart';
+import 'package:estudo_biblico/pages/study2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,18 +25,27 @@ class MyApp extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        drawerTheme: DrawerThemeData(
-          backgroundColor: Color(0xFF153862),
-        ),
+        drawerTheme: DrawerThemeData(backgroundColor: Color(0xFF153862)),
         listTileTheme: ListTileThemeData(
-          titleTextStyle: TextStyle(
-            color: Colors.white,
-            fontSize: 17
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 17),
+          iconColor: Colors.white,
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Color(0xFF153862),
+            foregroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
           ),
-          iconColor: Colors.white
-        )
+        ),
       ),
-      home: HomePage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        '/tema1': (context) => Study1(),
+        '/tema2': (context) => Study2(),
+      },
     );
   }
 }
