@@ -15,10 +15,15 @@ class ButtonsHome extends StatelessWidget {
           Navigator.of(context).pushReplacementNamed(route);
         },
         style: ElevatedButton.styleFrom(
-          
           fixedSize: Size(MediaQuery.of(context).size.width * 0.8, 40),
         ),
-        child: Text(text, style: TextStyle(fontSize: 16)),
+        child: Text(
+          text,
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 16,
+          height: 1.3
+          ),
+        ),
       ),
     );
   }
