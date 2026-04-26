@@ -20,9 +20,7 @@ class ButtonsHome extends StatelessWidget {
         child: Text(
           text,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 16,
-          height: 1.3
-          ),
+          style: TextStyle(fontSize: 16, height: 1.3),
         ),
       ),
     );
