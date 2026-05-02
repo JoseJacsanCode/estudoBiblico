@@ -1,6 +1,7 @@
 import 'package:estudo_biblico/widgets/buttons/left_button.dart';
 import 'package:estudo_biblico/widgets/buttons/right_button.dart';
 import 'package:estudo_biblico/widgets/custom_appbar.dart';
+import 'package:estudo_biblico/widgets/custom_clipoval.dart';
 import 'package:estudo_biblico/widgets/side_menu.dart';
 import 'package:flutter/material.dart';
 
@@ -12,13 +13,16 @@ class Study1 extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppbar(title: 'Tema 1'),
       drawer: Sidemenu(),
-      body: Stack(
+      body: 
+      Stack(
         children: [
-          Center(
-            child: Text('Texto de teste'),
+          Column(
+            children: [
+              CustomClipoval(imageWay: 'assets/images/bible.png',)
+            ],
           ),
-          LeftButton(backTo: '/',),
-          RightButton(goTo: '/tema2',)
+          LeftButton(backTo: '/'),
+          RightButton(goTo: '/tema2'),
         ],
       ),
     );
